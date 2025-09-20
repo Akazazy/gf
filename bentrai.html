@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tránh va bên trái</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">BÌNH DÂN HỌC VỤ SỐ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tàu hàng cắt qua mũi từ bên trái </h1>
+   <video id="myVideo" width="960" controls>
+    <source src="tr.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+
+  <!-- Nút điều khiển -->
+  <br><br>
+  <button onclick="playVideo()">▶️ Phát</button>
+  <button onclick="pauseVideo()">⏸️ Dừng</button>
+
+  <!-- Nút tải về -->
+  <br><br>
+  <a href="tr.mp4" download>
+    ⬇️ Tải video về
+  </a>
+
+  <!-- JavaScript điều khiển video -->
+  <script>
+    const video = document.getElementById('myVideo');
+
+    function playVideo() {
+      video.play();
+    }
+
+    function pauseVideo() {
+      video.pause();
+    }
+  </script>
+
+</body>
+</html>
